@@ -19,6 +19,7 @@ from aiogram import Bot, Dispatcher, F, Router, types
 from aiogram.filters import Command, CommandStart, CommandObject
 from aiogram.enums import ParseMode
 from aiogram.types import FSInputFile
+from aiogram.client.default import DefaultBotProperties
 from gtts import gTTS
 
 # Импортируем все функции БД из оригинального файла
