@@ -19,7 +19,6 @@ from aiogram import Bot, Dispatcher, F, Router, types
 from aiogram.filters import Command, CommandStart, CommandObject
 from aiogram.enums import ParseMode
 from aiogram.types import FSInputFile
-from aiogram.client.default import DefaultBotProperties
 from gtts import gTTS
 
 # Импортируем все функции БД из оригинального файла
@@ -2002,6 +2001,7 @@ async def main():
         try:
             gemini_client = True
             print("✅ Gemini API инициализирован (HTTP режим)")
+            print("Ya gaga pidoker")
         except Exception as e:
             print(f"⚠️ Не удалось инициализировать Gemini: {e}")
     else:
