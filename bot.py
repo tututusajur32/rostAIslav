@@ -18,7 +18,7 @@ from typing import List, Set, Tuple, Optional
 from aiogram import Bot, Dispatcher, F, Router, types
 from aiogram.filters import Command, CommandStart, CommandObject
 from aiogram.enums import ParseMode
-from aiogram.types import FSInputFile
+from aiogram.client.default import DefaultBotProperties
 from gtts import gTTS
 
 # Импортируем все функции БД из оригинального файла
@@ -2024,7 +2024,7 @@ async def main():
         pass
     
     # Initialize bot and dispatcher
-    bot = Bot(token=BOT_TOKEN, default=types.input_file.DefaultBotProperties(parse_mode=ParseMode.HTML))
+    bot = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
     dp = Dispatcher()
     
     # Register router
