@@ -2050,6 +2050,9 @@ async def start_web_server():
     await site.start()
     print("🌐 HTTP сервер запущен на порту 8080")
 
-if __name__ == "__main__":
+async def start_bot_and_server():
     await start_web_server()
-    asyncio.run(main())
+    await main()
+
+if __name__ == "__main__":
+    asyncio.run(start_bot_and_server())
